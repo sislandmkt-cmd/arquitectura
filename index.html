@@ -304,6 +304,18 @@ nav{
 .servicio .sheet-code{ margin-bottom:18px; }
 .servicio h3{ font-size:20px; font-weight:600; color:var(--text); line-height:1.3; }
 .servicio p{ margin-top:12px; color:var(--text-muted); font-size:15.5px; }
+.servicio-full{ grid-column:span 2; }
+@media(max-width:760px){ .servicio-full{ grid-column:span 1; } }
+.sw-list{
+  margin-top:20px;
+  display:grid; grid-template-columns:1fr 1fr; gap:10px 32px;
+}
+@media(max-width:560px){ .sw-list{ grid-template-columns:1fr; } }
+.sw-list li{
+  font-size:14.5px; color:var(--text-muted);
+  padding-left:18px; position:relative;
+}
+.sw-list li::before{ content:"—"; position:absolute; left:0; color:var(--blueprint-bright); }
 
 /* ═══════════════════════════════════════
    CATALOGO DE HERRAMIENTAS
@@ -724,6 +736,20 @@ html{ background:var(--ink); }
         <span class="sheet-code">06</span>
         <h3>Tarjeta digital</h3>
         <p>Tarjeta de presentación interactiva con enlaces a portafolio, WhatsApp y redes — pensada para asambleas, congresos y encuentros del gremio.</p>
+      </div>
+      <div class="servicio servicio-full">
+        <span class="sheet-code">07</span>
+        <h3>Herramientas digitales a la medida</h3>
+        <p>Además de nuestras demos ya disponibles, desarrollamos software propio para la operación diaria de la firma. Algunos ejemplos:</p>
+        <ul class="sw-list">
+          <li>Cotizador paramétrico de presupuesto</li>
+          <li>Calculadora de materiales</li>
+          <li>Generador de propuestas en PDF</li>
+          <li>Checklist digital de levantamiento de sitio</li>
+          <li>Portal de seguimiento de obra</li>
+          <li>Bitácora de obra digital</li>
+          <li>Portal privado de decisiones del cliente</li>
+        </ul>
       </div>
     </div>
   </div>
